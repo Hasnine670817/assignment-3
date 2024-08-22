@@ -35,13 +35,16 @@
 
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'Manrope': ["Manrope", 'sans-serif'],
+                    },
+                },
+            },
         }
     </script>
 
@@ -49,9 +52,104 @@
 
 
 </head>
-<body>
+<body class="font-Manrope">
 
-    <h2>lorem</h2>
+    <!-- header-area start here -->
+    <header>
+        <div class="container mx-auto px-5 sm:ps-8">
+            <!-- header-nav-area -->
+            <div class="header-nav-area">
+                <div class="nav-lg hidden lg:block">
+                    <nav class="flex justify-between items-center pt-14 pb-10">
+                        <div class="nav-first">
+                            <a href="#"><img class="lg:w-32 xl:w-auto" src="images/header-logo.png" alt="image"></a>
+                        </div>
+                        <div class="nav-center">
+                            <ul class="flex lg:gap-6 xl:gap-8">
+                                <li>
+                                    <a class="text-base text-gray-600 active:text-gray-700 font-extrabold" href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a class="text-base text-gray-600" href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a class="text-base text-gray-600" href="#">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a class="text-base text-gray-600" href="#">Blogs</a>
+                                </li>
+                                <li>
+                                    <a class="text-base text-gray-600" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-end">
+                            <ul class="flex lg:gap-3 xl:gap-4">
+                                <li>
+                                    <button><img class="lg:w-11 xl:w-auto" src="images/search-btn.png" alt="image"></button>
+                                </li>
+                                <li>
+                                    <button><img class="lg:w-11 xl:w-auto" src="images/shop-btn.png" alt="image"></button>
+                                </li>
+                                <li>
+                                    <button class="btn bg-[#ABEF5F] rounded-[32px] lg:text-lg xl:text-xl font-extrabold lg:h-12 xl:h-14">Book Consult <img class="lg:w-7 xl:w-auto" src="images/arrow-up-right-black.png" alt="image"></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="nav-sm block lg:hidden">
+                    <div class="flex justify-between pt-8 pb-8">
+                        <div class="logo-div">
+                            <a href="#"><img src="images/header-logo.png" alt="image"></a>
+                        </div>
+                        <div class="flex gap-3">
+                            <div class="hidden sm:block">
+                                <ul class="flex gap-2 lg:gap-3 xl:gap-4">
+                                    <li>
+                                        <button><img class="lg:w-11 xl:w-auto" src="images/search-btn.png" alt="image"></button>
+                                    </li>
+                                    <li>
+                                        <button><img class="lg:w-11 xl:w-auto" src="images/shop-btn.png" alt="image"></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn bg-[#ABEF5F] rounded-[32px] lg:text-lg xl:text-xl font-extrabold lg:h-12 xl:h-14">Book Consult <img class="lg:w-7 xl:w-auto" src="images/arrow-up-right-black.png" alt="image"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="drawer w-auto">
+                                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                                <div class="drawer-content">
+                                    <!-- Page content here -->
+                                    <label for="my-drawer" class="cursor-pointer"><img src="images/bar-icon.png" alt="image"></label>
+                                </div>
+                                <div class="drawer-side">
+                                    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                                    <ul class="menu bg-base-200 text-base-content min-h-full w-80 px-5 pt-8">
+                                        <li><a href="#" class="p-0 hover:bg-transparent pb-8"><img src="images/header-logo.png" alt=""></a></li>
+                                        <li><a>Home</a></li>
+                                        <li><a>Services</a></li>
+                                        <li><a>Portfolio</a></li>
+                                        <li><a>Blog</a></li>
+                                        <li><a>Contact Us</a></li>
+                                        <li class="block sm:hidden">
+                                            <button class="hover:bg-transparent py-2"><img class="w-10" src="images/search-btn.png" alt="image"></button>
+                                        </li>
+                                        <li class="block sm:hidden">
+                                            <button class="hover:bg-transparent py-2"><img class="w-10" src="images/shop-btn.png" alt="image"></button>
+                                        </li>
+                                        <li class="block sm:hidden">
+                                            <button class="btn w-full bg-[#ABEF5F] rounded-[32px] lg:text-lg xl:text-xl font-extrabold lg:h-12 xl:h-14">Book Consult <img class="w-8 lg:w-7 xl:w-auto" src="images/arrow-up-right-black.png" alt="image"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     
 </body>
 </html>
