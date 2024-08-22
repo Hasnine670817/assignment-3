@@ -54,6 +54,9 @@
                     fontFamily: {
                         'Manrope': ["Manrope", 'sans-serif'],
                     },
+                    backgroundImage: {
+                        'discuss-bac': ['url(images/bg.jpg)'],
+                    },
                 },
             },
         }
@@ -282,7 +285,7 @@
                                 <img class="w-full sm:w-full sm:h-full sm:object-cover rounded-xl xl:h-auto" src="images/img3.png" alt="image">
                             </div>
                         </div>
-                        <div class="bg-white border-[1px] border-[#E9E9E9] p-5 lg:p-6 rounded-2xl sm:grid sm:gap-4 md:gap-6 sm:items-center sm:grid-cols-[repeat(1,_0.4fr_0.6fr)] md:grid-cols-[repeat(1,_0.4fr_0.6fr)] lg:gap-5 xl:gap-x-6 sm:order-1 lg:order-1 sm:w-full">
+                        <div class="bg-white border-[1px] border-[#E9E9E9] p-5 lg:p-6 rounded-2xl sm:grid sm:gap-4 md:gap-6 sm:items-center sm:grid-cols-[repeat(1,_0.4fr_0.6fr)] md:grid-cols-[repeat(1,_0.4fr_0.6fr)] lg:grid-cols-[repeat(1,_0.5fr_0.5fr)] lg:gap-5 xl:gap-x-6 sm:order-1 lg:order-1 sm:w-full">
                             <div class="lg:h-full">
                                 <img class="w-full md:w-auto lg:w-full lg:h-full lg:object-cover rounded-xl" src="images/img4.png" alt="image">
                             </div>
@@ -297,6 +300,36 @@
                                 <img class="w-full sm:w-full sm:h-full lg:object-cover rounded-xl xl:h-auto" src="images/img5.png" alt="image">
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <!-- discuss-area stat here -->
+            <section class="discuss-area bg-discuss-bac py-8 sm:py-10 md:py-[72px] lg:py-24">
+                <div class="container mx-auto px-5 sm:px-8">
+                    <div class="discuss-heading text-center">
+                        <a href="#" class="inline-block bg-[#ABEF5F33] text-base font-bold rounded-3xl py-2 px-4 text-dark_2"><i class="fa-regular fa-arrow-right-long me-2"></i> Let’s Connect</a>
+                        <h2 class="mt-4 mb-4 md:mt-4 md:mb-6 text-dark font-bold text-2xl md:text-[32px] md:leading-normal lg:text-[40px] lg:leading-snug">Let’s Discuss Next Project</h2>
+                        <p class="text-[14px] sm:text-base md:mb-[32px] font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, <br class="hidden md:block"> featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                    <div class="contact-form max-w-[970px] mx-auto">
+                        <form action="#">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-x-5 md:gap-y-6 lg:gap-6">
+                                <div class="form-group">
+                                    <input class="w-full h-14 md:h-auto border-[1px] border-[#E9E9E9] rounded-[64px] p-5 text-base font-medium" type="text" name="#" placeholder="First Name*" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="w-full h-14 md:h-auto border-[1px] border-[#E9E9E9] rounded-[64px] p-5 text-base font-medium" type="text" name="#" placeholder="Last Name*" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="w-full h-14 md:h-auto border-[1px] border-[#E9E9E9] rounded-[64px] p-5 text-base font-medium" type="tel" name="#" placeholder="Phone Number*" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="w-full h-14 md:h-auto border-[1px] border-[#E9E9E9] rounded-[64px] p-5 text-base font-medium" type="email" name="#" placeholder="Email Number*" required>
+                                </div>
+                            </div>
+                            <textarea rows="8" class="w-full mt-6 border-[1px] border-[#E9E9E9] rounded-[32px] p-5 text-base font-medium" placeholder="Write your message here" required></textarea>
+                            <button type="submit" class="btn w-full border-none mt-8 bg-[#ABEF5F] rounded-[32px] lg:text-lg xl:text-xl font-extrabold lg:h-12 xl:h-14">Send Mail <img class="lg:w-7 xl:w-auto" src="images/arrow-up-right-black.png" alt="image"></button>
+                        </form>
                     </div>
                 </div>
             </section>
