@@ -39,6 +39,10 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        primary: '#ABEF5F',
+                        dark: '#212121',
+                        dark_2: '#494949',
+                        link_hover: '#77AAEA',
                     },
                     fontFamily: {
                         'Manrope': ["Manrope", 'sans-serif'],
@@ -52,7 +56,7 @@
 
 
 </head>
-<body class="font-Manrope">
+<body class="font-Manrope text-dark_2">
 
     <!-- header-area start here -->
     <header>
@@ -67,29 +71,29 @@
                         <div class="nav-center">
                             <ul class="flex lg:gap-6 xl:gap-8">
                                 <li>
-                                    <a class="text-base text-gray-600 active:text-gray-700 font-extrabold" href="#">Home</a>
+                                    <a class="text-base text-gray-600 hover:text-link_hover transition-all duration-300 ease-in-out active:text-gray-700 font-extrabold" href="#">Home</a>
                                 </li>
                                 <li>
-                                    <a class="text-base text-gray-600" href="#">Services</a>
+                                    <a class="text-base text-gray-600 hover:text-link_hover transition-all duration-300 ease-in-out" href="#">Services</a>
                                 </li>
                                 <li>
-                                    <a class="text-base text-gray-600" href="#">Portfolio</a>
+                                    <a class="text-base text-gray-600 hover:text-link_hover transition-all duration-300 ease-in-out" href="#">Portfolio</a>
                                 </li>
                                 <li>
-                                    <a class="text-base text-gray-600" href="#">Blogs</a>
+                                    <a class="text-base text-gray-600 hover:text-link_hover transition-all duration-300 ease-in-out" href="#">Blogs</a>
                                 </li>
                                 <li>
-                                    <a class="text-base text-gray-600" href="#">Contact Us</a>
+                                    <a class="text-base text-gray-600 hover:text-link_hover transition-all duration-300 ease-in-out" href="#">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="nav-end">
                             <ul class="flex lg:gap-3 xl:gap-4">
                                 <li>
-                                    <button><img class="lg:w-11 xl:w-auto" src="images/search-btn.png" alt="image"></button>
+                                    <button class="hover:opacity-80"><img class="lg:w-11 xl:w-auto" src="images/search-btn.png" alt="image"></button>
                                 </li>
                                 <li>
-                                    <button><img class="lg:w-11 xl:w-auto" src="images/shop-btn.png" alt="image"></button>
+                                    <button class="hover:opacity-80"><img class="lg:w-11 xl:w-auto" src="images/shop-btn.png" alt="image"></button>
                                 </li>
                                 <li>
                                     <button class="btn bg-[#ABEF5F] rounded-[32px] lg:text-lg xl:text-xl font-extrabold lg:h-12 xl:h-14">Book Consult <img class="lg:w-7 xl:w-auto" src="images/arrow-up-right-black.png" alt="image"></button>
@@ -148,6 +152,15 @@
                     </div>
                 </div>
             </div>
+            <!-- banner-area -->
+            <section class="banner-area text-center">
+                <div class="banner-image-content sm:px-10 md:px-14 xl:px-0">
+                    <img class="mx-auto w-4/5 md:w-2/3 lg:w-auto" src="images/banner.png" alt="image">
+                    <h1 class="text-[28px] leading-tight md:text-4xl lg:text-5xl xl:text-[64px] lg:leading-snug font-extrabold text-dark my-4 lg:my-6">A barn house of this design has a striking appearance</h1>
+                    <p class="text-[14px] sm:text-base">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br class="hidden xl:block"> accents, and large windows that flood the space with natural light.</p>
+                    <a href="#" class="btn bg-[#D4F7AE] rounded-[32px] text-xl font-bold h-14 px-5 w-full sm:w-auto mt-5 lg:mt-6">View Details <img class="w-auto" src="images/arrow-up-right-primary.png" alt="image"></a>
+                </div>
+            </section>
         </div>
     </header>
     
